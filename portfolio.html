@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Handbags For Sale</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    h1 { font-size: 2em; text-align:center; }
+.ptit { text-transform: uppercase; font-weight: 700; padding-top: .2em; }
+.pimg { width:100%;height:auto; }
+
+
+@media screen and (max-width: 580px) {
+ #products {}
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 581px) {
+ #products {   display: grid;  grid-template-columns: auto auto; }
+}
+
+@media screen and (min-width: 901px) {
+ #products { display: grid; grid-template-columns: auto auto auto; }
+}
+
+.product { margin: .5em; }
+.money { padding-top:.2em; }
+.details { font-size:.8em; padding:.2em; }
+
+</style>
+
+<script>
+let productdb = '{ "products" : [{"pid":120,"money":"3,190.00","product":"petit bucket","image":"product_images\/png\/louis-vuitton-petit-bucket--M59961_PM1_Worn%20view.png"},{"pid":133,"money":"1,880.00","product":"saint jacques","image":"product_images\/png\/louis-vuitton-saint-jacques--M59808_PM1_Worn%20view.png"},{"pid":144,"money":"1,680.00","product":"coussin pm","image":"product_images\/png\/louis-vuitton-coussin-pm--M20760_PM1_Side%20view.png"},{"pid":166,"money":"2,340.00","product":"dauphine chain wallet","image":"product_images\/png\/louis-vuitton-dauphine-chain-wallet--M68746_PM1_Back%20view.png"},{"pid":178,"money":"2,020.00","product":"saint jacques","image":"product_images\/png\/louis-vuitton-saint-jacques--M59808_PM2_Front%20view.png"},{"pid":196,"money":"3,280.00","product":"dauphine chain wallet","image":"product_images\/png\/louis-vuitton-dauphine-chain-wallet--M68746_PM1_Worn%20view.png"},{"pid":225,"money":"2,630.00","product":"petit bucket","image":"product_images\/png\/louis-vuitton-petit-bucket--M59961_PM1_Back%20view.png"},{"pid":253,"money":"2,910.00","product":"saint jacques","image":"product_images\/png\/louis-vuitton-saint-jacques--M59808_PM1_Back%20view.png"},{"pid":276,"money":"2,950.00","product":"neverfull","image":"product_images\/png\/louis-vuitton-neverfull-mm--M40995_PM1_Worn%20view.png"},{"pid":292,"money":"2,580.00","product":"mini dauphine","image":"product_images\/png\/louis-vuitton-mini-dauphine--M55964_PM1_Back%20view.png"},{"pid":306,"money":"2,870.00","product":"saint jacques","image":"product_images\/png\/louis-vuitton-saint-jacques--M59963_PM1_Back%20view.png"},{"pid":328,"money":"1,900.00","product":"mini dauphine","image":"product_images\/png\/louis-vuitton-mini-dauphine--M55964_PM1_Worn%20view.png"},{"pid":352,"money":"3,180.00","product":"petit bucket","image":"product_images\/png\/louis-vuitton-petit-bucket--M59961_PM2_Front%20view.png"},{"pid":364,"money":"3,160.00","product":"since 1854 dauphine","image":"product_images\/png\/louis-vuitton-since-1854-dauphine-mm--M57211_PM2_Front%20view.png"},{"pid":392,"money":"3,420.00","product":"saint jacques","image":"product_images\/png\/louis-vuitton-saint-jacques--M59963_PM1_Worn%20view.png"},{"pid":411,"money":"3,450.00","product":"neverfull gm","image":"product_images\/png\/louis-vuitton-neverfull-gm--N41357_PM1_Side%20view.png"},{"pid":423,"money":"2,680.00","product":"boulogne","image":"product_images\/png\/louis-vuitton-boulogne--M45832_PM1_Back%20view.png"},{"pid":437,"money":"2,390.00","product":"neverfull gm","image":"product_images\/png\/louis-vuitton-neverfull-gm--N41357_PM1_Worn%20view.png"},{"pid":448,"money":"2,140.00","product":"since 1854 dauphine","image":"product_images\/png\/louis-vuitton-since-1854-dauphine-mm--M57211_PM1_Worn%20view.png"},{"pid":466,"money":"2,060.00","product":"lv pont 9 soft","image":"product_images\/png\/louis-vuitton-lv-pont-9-soft-mm--M59446_PM1_Back%20view.png"},{"pid":481,"money":"2,110.00","product":"coussin pm","image":"product_images\/png\/louis-vuitton-coussin-pm--M20760_PM1_Interior%20view.png"},{"pid":491,"money":"3,550.00","product":"boulogne","image":"product_images\/png\/louis-vuitton-boulogne--M45832_PM1_Worn%20view.png"},{"pid":501,"money":"2,560.00","product":"lv pont 9 soft","image":"product_images\/png\/louis-vuitton-lv-pont-9-soft-mm--M59446_PM1_Worn%20view.png"},{"pid":522,"money":"3,590.00","product":"dauphine chain wallet","image":"product_images\/png\/louis-vuitton-dauphine-chain-wallet--M68746_PM2_Front%20view.png"},{"pid":545,"money":"2,140.00","product":"since 1854 dauphine","image":"product_images\/png\/louis-vuitton-since-1854-dauphine-mm--M57211_PM1_Back%20view.png"},{"pid":572,"money":"3,650.00","product":"neverfull","image":"product_images\/png\/louis-vuitton-neverfull-mm--M40995_PM1_Side%20view.png"},{"pid":602,"money":"1,600.00","product":"petit bucket","image":"product_images\/png\/louis-vuitton-petit-bucket--M59962_PM2_Front%20view.png"},{"pid":623,"money":"3,690.00","product":"on my side","image":"product_images\/png\/louis-vuitton-on-my-side-mm--M59842_PM1_Back%20view.png"},{"pid":649,"money":"2,810.00","product":"petit bucket","image":"product_images\/png\/louis-vuitton-petit-bucket--M59962_PM1_Worn%20view.png"},{"pid":665,"money":"3,230.00","product":"neverfull","image":"product_images\/png\/louis-vuitton-neverfull-mm--M46220_PM1_Side%20view.png"},{"pid":695,"money":"1,690.00","product":"mini dauphine","image":"product_images\/png\/louis-vuitton-mini-dauphine--M55964_PM2_Front%20view.png"},{"pid":714,"money":"2,030.00","product":"on my side","image":"product_images\/png\/louis-vuitton-on-my-side-mm--M59842_PM1_Worn%20view.png"},{"pid":731,"money":"2,720.00","product":"petit bucket","image":"product_images\/png\/louis-vuitton-petit-bucket--M59962_PM1_Back%20view.png"}]}';
+
+function outproducts()
+{
+	const jo = JSON.parse(productdb);
+	var content = "";
+	for (let i=0; i<jo.products.length;i++)
+	{
+		content +=
+			"<div class='product'><img class='pimg' src='" + jo.products[i].image + "'><div class='details'><div class='ptit'>" + jo.products[i].product + "</div><div class='money'>$" + jo.products[i].money + "</div></div></div>";
+	}
+	document.getElementById("products").innerHTML = content;
+
+}
+window.onload = function() { outproducts();};
+</script>
+		
+    </head>
+    <body>
+        <h1>Handbags For Sale</h1>
+	<div id="products"></div>
+    </body>
+</html>
